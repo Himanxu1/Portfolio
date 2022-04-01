@@ -5,7 +5,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+
+html{
+    scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
 /* navbar styling */
+
+
 .navbar{
     position:fixed;
     width: 100%;
@@ -81,11 +89,16 @@ transition: color 0.3s ease;
 
 .home{
     display: flex;
-    background:url("man.jpg") ;
-    height: 100vh;
+   
+    /* height: 110vh; */
     color: white;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
+
+    background: linear-gradient(-120deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 6s ease infinite;
+	height: 100vh;
 
 }
 .home .max-width{
@@ -323,6 +336,8 @@ section .title::after{
 .skills .skill-content .right .css::before{
     width: 60%;
 }
+
+
 .skills .skill-content .right .Javascript::before{
     width: 70%;
 }
@@ -334,6 +349,20 @@ section .title::after{
 }
 
 
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 
 
